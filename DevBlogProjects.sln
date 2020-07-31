@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpOgenGLBeispiel", "CSh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpOpenGLBeispielExtended", "CSharpOpenGLBeispielExtended\CSharpOpenGLBeispielExtended.csproj", "{41F878F2-EC76-49EC-9C4F-AFAB3445911D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySQLConnect", "MySQLConnect\MySQLConnect.csproj", "{B1345A3C-D661-406A-85EA-B93A7817692B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +85,26 @@ Global
 		{41F878F2-EC76-49EC-9C4F-AFAB3445911D}.Release|x64.Build.0 = Release|Any CPU
 		{41F878F2-EC76-49EC-9C4F-AFAB3445911D}.Release|x86.ActiveCfg = Release|Any CPU
 		{41F878F2-EC76-49EC-9C4F-AFAB3445911D}.Release|x86.Build.0 = Release|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Debug|ARM.Build.0 = Debug|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Debug|x64.Build.0 = Debug|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Debug|x86.Build.0 = Debug|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Release|ARM.ActiveCfg = Release|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Release|ARM.Build.0 = Release|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Release|ARM64.Build.0 = Release|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Release|x64.ActiveCfg = Release|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Release|x64.Build.0 = Release|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Release|x86.ActiveCfg = Release|Any CPU
+		{B1345A3C-D661-406A-85EA-B93A7817692B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
