@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Bifrost.Devices.Gpio">
+      <HintPath>..\..\Bifrost\Bifrost.Devices.Gpio\bin\Debug\netstandard1.6\Bifrost.Devices.Gpio.dll</HintPath>
+    </Reference>
+    <Reference Include="Bifrost.Devices.Gpio.Abstractions">
+      <HintPath>..\..\Bifrost\Bifrost.Devices.Gpio\bin\Debug\netstandard1.6\Bifrost.Devices.Gpio.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Bifrost.Devices.Gpio.Core">
+      <HintPath>..\..\Bifrost\Bifrost.Devices.Gpio\bin\Debug\netstandard1.6\Bifrost.Devices.Gpio.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
