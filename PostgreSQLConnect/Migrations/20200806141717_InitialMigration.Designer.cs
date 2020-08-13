@@ -8,7 +8,7 @@ using PostgreSQLConnect.Models;
 
 namespace PostgreSQLConnect.Migrations
 {
-    [DbContext(typeof(MyWebApiContext))]
+    [DbContext(typeof(MyContext))]
     [Migration("20200806141717_InitialMigration")]
     partial class InitialMigration
     {
