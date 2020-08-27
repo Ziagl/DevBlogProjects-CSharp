@@ -7,8 +7,8 @@ using PostgreSQLConnect.Models;
 
 namespace PostgreSQLConnect.Migrations
 {
-    [DbContext(typeof(MyWebApiContext))]
-    partial class MyWebApiContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(MyContext))]
+    partial class MyContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

@@ -2,9 +2,9 @@
 
 namespace PostgreSQLConnect.Models
 {
-    public class MyWebApiContext : DbContext
+    public class MyContext : DbContext
     {
-        public MyWebApiContext(DbContextOptions<MyWebApiContext> options) : base(options) { }
+        public MyContext(DbContextOptions<MyContext> options) : base(options) { }
 
         public DbSet<User> Users { get; set; }
     }
