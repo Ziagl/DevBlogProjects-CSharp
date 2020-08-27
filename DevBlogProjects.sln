@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MySQLConnect", "MySQLConnec
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PostgreSQLConnect", "PostgreSQLConnect\PostgreSQLConnect.csproj", "{ACD9BB71-204A-49B6-8B08-464068E787E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaspberryPiGPIO", "RaspberryPiGPIO\RaspberryPiGPIO.csproj", "{16005150-80EC-4124-BDAA-7CA47CD86217}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RaspberryPiGPIO", "RaspberryPiGPIO\RaspberryPiGPIO.csproj", "{16005150-80EC-4124-BDAA-7CA47CD86217}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RacingManagerWindowsApp", "RacingManagerWindowsApp\RacingManagerWindowsApp.csproj", "{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -149,6 +151,26 @@ Global
 		{16005150-80EC-4124-BDAA-7CA47CD86217}.Release|x64.Build.0 = Release|Any CPU
 		{16005150-80EC-4124-BDAA-7CA47CD86217}.Release|x86.ActiveCfg = Release|Any CPU
 		{16005150-80EC-4124-BDAA-7CA47CD86217}.Release|x86.Build.0 = Release|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Debug|ARM.Build.0 = Debug|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Debug|x64.Build.0 = Debug|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Debug|x86.Build.0 = Debug|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Release|ARM.ActiveCfg = Release|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Release|ARM.Build.0 = Release|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Release|ARM64.Build.0 = Release|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Release|x64.ActiveCfg = Release|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Release|x64.Build.0 = Release|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Release|x86.ActiveCfg = Release|Any CPU
+		{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
