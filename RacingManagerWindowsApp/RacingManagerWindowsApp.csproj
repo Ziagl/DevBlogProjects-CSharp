@@ -4,6 +4,9 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+    <AssemblyName>Racing-Manager</AssemblyName>
+    <RootNamespace>RacingManagerWindowsApp</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
