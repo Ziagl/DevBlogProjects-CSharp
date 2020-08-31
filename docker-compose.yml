@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  postgresqlconnect:
+    image: ${DOCKER_REGISTRY-}postgresqlconnect
+    build:
+      context: .
+      dockerfile: PostgreSQLConnect/Dockerfile
