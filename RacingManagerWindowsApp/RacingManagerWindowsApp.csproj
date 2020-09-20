@@ -9,16 +9,24 @@
     <RootNamespace>RacingManagerWindowsApp</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
   <ItemGroup>
     <None Remove="favicon.ico" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Web.WebView2" Version="0.9.579-prerelease" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="0.9.628-prerelease" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\werne\.nuget\packages\microsoft.web.webview2\0.9.628-prerelease\build\\..\runtimes\win-arm\native\WebView2Loader.dll" />
   </ItemGroup>
 
 </Project>
