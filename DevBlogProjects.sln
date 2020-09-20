@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RacingManagerWindowsApp", "
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A8B1A691-4F00-47B0-BBD3-94218B3D897F}"
 EndProject
-Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "RacingManagerWindowsAppSetup", "..\RacingManagerWindowsAppSetup\RacingManagerWindowsAppSetup.wapproj", "{CBB92D7E-2558-4CFC-A7D3-AF8407979B52}"
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "RacingManagerWindowsAppSetup", "RacingManagerWindowsAppSetup\RacingManagerWindowsAppSetup.wapproj", "{CBB92D7E-2558-4CFC-A7D3-AF8407979B52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
