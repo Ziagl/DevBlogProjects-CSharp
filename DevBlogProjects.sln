@@ -17,6 +17,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RaspberryPiGPIO", "Raspberr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF3D", "WPF3D\WPF3D.csproj", "{5CB58072-FF34-43FB-A308-E3DB5782F305}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RacingManagerWindowsApp", "RacingManagerWindowsApp\RacingManagerWindowsApp.csproj", "{D6A2EB58-ECA7-46A0-B353-82CA15545DCF}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A8B1A691-4F00-47B0-BBD3-94218B3D897F}"
+EndProject
+Project("{C7167F0D-BC9F-4E6E-AFE1-012C56B48DB5}") = "RacingManagerWindowsAppSetup", "RacingManagerWindowsAppSetup\RacingManagerWindowsAppSetup.wapproj", "{CBB92D7E-2558-4CFC-A7D3-AF8407979B52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -151,26 +157,6 @@ Global
 		{16005150-80EC-4124-BDAA-7CA47CD86217}.Release|x64.Build.0 = Release|Any CPU
 		{16005150-80EC-4124-BDAA-7CA47CD86217}.Release|x86.ActiveCfg = Release|Any CPU
 		{16005150-80EC-4124-BDAA-7CA47CD86217}.Release|x86.Build.0 = Release|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Debug|ARM.Build.0 = Debug|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Debug|ARM64.ActiveCfg = Debug|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Debug|ARM64.Build.0 = Debug|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Debug|x64.Build.0 = Debug|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Debug|x86.Build.0 = Debug|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Release|ARM.ActiveCfg = Release|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Release|ARM.Build.0 = Release|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Release|ARM64.ActiveCfg = Release|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Release|ARM64.Build.0 = Release|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Release|x64.ActiveCfg = Release|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Release|x64.Build.0 = Release|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Release|x86.ActiveCfg = Release|Any CPU
-		{5CB58072-FF34-43FB-A308-E3DB5782F305}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
