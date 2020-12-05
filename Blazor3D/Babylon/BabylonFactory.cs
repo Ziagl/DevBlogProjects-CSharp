@@ -43,6 +43,11 @@ namespace Blazor3D.Babylon
             return new Mesh(_jsRuntime, await _jsRuntime.InvokeAsync<JsRuntimeObjectRef>("babylonInterop.createSphere", name, options, scene));
         }
 
+        public async Task<Mesh> CreateBox(string name, Scene scene)
+        {
+            return new Mesh(_jsRuntime, await _jsRuntime.InvokeAsync<JsRuntimeObjectRef>("babylonInterop.createBox", name, scene));
+        }
+
         public async Task<Vector3> CreateVector3(double x, double y, double z)
         {
             return new Vector3(_jsRuntime, await _jsRuntime.InvokeAsync<JsRuntimeObjectRef>("babylonInterop.createVector3", x, y, z));

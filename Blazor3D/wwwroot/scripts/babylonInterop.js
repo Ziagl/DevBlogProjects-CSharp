@@ -91,6 +91,10 @@ babylonInterop.createSphere = function (name, options, scene) {
     return babylonInterop.storeObjRef(BABYLON.MeshBuilder.CreateSphere(name, options, scene));
 }
 
+babylonInterop.createBox = function (name, scene) {
+    return babylonInterop.storeObjRef(BABYLON.MeshBuilder.CreateBox(name, scene));
+}
+
 babylonInterop.createVector3 = function (x, y, z) {
     return babylonInterop.storeObjRef(new BABYLON.Vector3(x, y, z));
 }

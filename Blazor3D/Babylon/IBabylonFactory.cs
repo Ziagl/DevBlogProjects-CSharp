@@ -11,6 +11,7 @@ namespace Blazor3D.Babylon
         Task<PointLight> CreatePointLight(string name, Vector3 direction, Scene scene);
         Task<Scene> CreateScene(Engine engine);
         Task<Mesh> CreateSphere(string name, ExpandoObject options, Scene scene);
+        Task<Mesh> CreateBox(string name, Scene scene);
         Task<Vector3> CreateVector3(double x, double y, double z);
     }
 }

@@ -30,9 +30,10 @@ namespace Blazor3D.Shared
                 var light1 = await Babylon.CreateHemispehericLight("light1", hemisphericLightDirection, scene);
                 var pointLightDirection = await Babylon.CreateVector3(0, 1, -1);
                 var light2 = await Babylon.CreatePointLight("light2", pointLightDirection, scene);
-                var sphereOptions = new ExpandoObject();
-                sphereOptions.TryAdd("diameter", 2);
-                var sphere = await Babylon.CreateSphere("sphere", sphereOptions, scene);
+                //var sphereOptions = new ExpandoObject();
+                //sphereOptions.TryAdd("diameter", 2);
+                //var sphere = await Babylon.CreateSphere("sphere", sphereOptions, scene);
+                var box = await Babylon.CreateBox("box", scene);
                 await engine.RunRenderLoop(scene);
             }
         }
