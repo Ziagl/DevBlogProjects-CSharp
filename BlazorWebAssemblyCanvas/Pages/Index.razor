@@ -43,10 +43,6 @@ Welcome to your new app.
         await base.OnInitializedAsync();
     }
 
-    /*[JSInvokable]
-    //public void ResizeInBlazor(double width, double height) => BallField.Resize(width, height);
-    */
-
     [JSInvokable]
     public async ValueTask RenderInBlazor(float timeStamp)
     {
