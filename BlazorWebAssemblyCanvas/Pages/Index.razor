@@ -1,0 +1,88 @@
+﻿@page "/"
+
+<!--<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+-->
+
+@using Blazor.Extensions
+@using Blazor.Extensions.Canvas
+@using Blazor.Extensions.Canvas.Canvas2D
+@using BlazorWebAssemblyCanvas.Models
+@inject IJSRuntime JsRuntime;
+
+<div id="canvasHolder" style="position: fixed; width: 100%; height: 100%">
+    <BECanvas Width="@(width)" Height="@(height)" @ref="CanvasRef"></BECanvas>
+</div>
+
+@code{
+    private List<Agent> agents = new List<Agent>();
+    private Canvas2DContext _context;
+    protected BECanvasComponent CanvasRef;
+    private DateTime LastRender;
+    private int width = 800;
+    private int height = 600;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        Random rand = new Random();
+        for(int i=0; i < 40; ++i)
+        {
+            int x = rand.Next(0, width);
+            int y = rand.Next(0, height);
+
+            agents.Add(new Agent(x, y));
+        }
+
+        this._context = await CanvasRef.CreateCanvas2DAsync();
+        await JsRuntime.InvokeAsync<object>("initRenderJS", DotNetObjectReference.Create(this));
+        await base.OnInitializedAsync();
+    }
+
+    /*[JSInvokable]
+    //public void ResizeInBlazor(double width, double height) => BallField.Resize(width, height);
+    */
+
+    [JSInvokable]
+    public async ValueTask RenderInBlazor(float timeStamp)
+    {
+        await this._context.BeginBatchAsync();
+
+        await this._context.ClearRectAsync(0, 0, this.width, this.height);
+
+        // draw all agents
+        foreach(var agent in this.agents)
+        {
+            agent.Update(timeStamp * 0.001f);
+            await agent.Draw(this._context);
+            agent.Bounce(this.width, this.height);
+        }
+
+        await this._context.SetLineWidthAsync(1);
+
+        // draw all lines
+        for(int i=0; i<agents.Count; ++i)
+        {
+            var agent = agents[i];
+
+            for(int j=i+1; j<agents.Count; ++j)
+            {
+                var other = agents[j];
+                double dist = agent.Pos.GetDistance(other.Pos);
+
+                if (dist > 200) continue;
+
+                await this._context.BeginPathAsync();
+                await this._context.MoveToAsync(agent.Pos.X, agent.Pos.Y);
+                await this._context.LineToAsync(other.Pos.X, other.Pos.Y);
+                await this._context.StrokeAsync();
+            }
+        }
+
+        await this._context.EndBatchAsync();
+    }
+}
